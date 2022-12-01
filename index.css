@@ -3,12 +3,16 @@ html {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #ccd7f6;
   scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
   background-color: #0a192f;
   /* height: 100vh; */
   /* width: 100vw; */
+  overflow-x: hidden;
+
   /* padding: 1rem 2rem; */
 }
 
@@ -164,6 +168,46 @@ html {
   font-size: 1rem;
 }
 
+.sub-container {
+  display: flex;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 65vh;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-item {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30vh;
+  margin: 0px auto;
+  background-color: #8893b0;
+}
+
+.menu-item-social {
+  margin: 10px auto;
+}
+
+.menu-item-social svg {
+  width: 20px;
+}
+
 @media only screen and (max-width: 1024px) {
   .resume {
     padding: 0.5rem 1rem;
@@ -229,15 +273,108 @@ html {
   .fixed-header {
     width: 100vw;
   }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 65vh;
+  }
+
+  .menu-item-social {
+    display: block;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .social-item {
+    margin-right: 25px;
+  }
+
+  .social::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30vw;
+    margin: 0px auto;
+    background-color: #8893b0;
+  }
+
+  .menu-item-social svg {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .center-content {
-    padding: 3rem;
+    padding: 2rem;
+    width: calc(100vw - 4rem);
   }
 
   .sub-heading {
     /* font-size: 2rem; */
+    width: calc(100vw - 6rem);
+    justify-content: start;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    /* width: 100vw; */
+  }
+
+  .fixed-header {
     width: 100vw;
+  }
+
+  .header {
+    width: 85vw;
+  }
+
+  .social::after {
+    width: 70vw;
+  }
+
+  .about-content-text {
+    width: calc(100vw - 6rem);
+    padding: 0;
+  }
+
+  .get-in-touch {
+    width: calc(100vw - 6rem);
+  }
+
+  .image img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .image {
+    display: inherit;
+    align-self: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .thin-line {
+    width: 5rem;
+  }
+
+  .social {
+    width: calc(100vw - 6rem);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sub-heading {
+    font-size: 15px;
   }
 }

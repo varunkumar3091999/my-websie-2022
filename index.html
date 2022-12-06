@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="container">
+    <script src="index.js"></script>
     <div class="fixed-header">
       <div class="header">
-        <h1>LOGO</h1>
+        <a href="#home" class="logo">
+          <h1>LOGO</h1>
+        </a>
 
         <div class="menu">
           <a class="menu-item" href="#about">
@@ -31,7 +34,7 @@
       </div>
     </div>
 
-    <div class="center-content">
+    <div class="center-content" id="home">
       <div class="intro-hi text-color-secondary">Hi, my name is</div>
       <div class="heading">Varun Kumar</div>
       <div class="build-things heading text-color-grey">
@@ -48,7 +51,9 @@
 
     <div class="center-content" id="about">
       <div class="sub-heading">
-        <span class="text-color-secondary about-index">01.</span>About Me
+        <span class="sub-heading-heading">
+          <span class="text-color-secondary about-index">01.</span>About Me
+        </span>
         <div class="thin-line"></div>
       </div>
 
@@ -80,12 +85,12 @@
           <div>Below are the few technologies that I am most familiar with</div>
 
           <div class="most-familiar-skills">
-            <ul class="most-familiar-skills-list">
-              <li class="most-familiar-skills-list-item">Javascript</li>
-              <li class="most-familiar-skills-list-item">HTML</li>
-              <li class="most-familiar-skills-list-item">CSS</li>
-              <li class="most-familiar-skills-list-item">React JS</li>
-              <li class="most-familiar-skills-list-item">TailwindCSS</li>
+            <ul class="common-list">
+              <li class="common-list-item">Javascript</li>
+              <li class="common-list-item">HTML</li>
+              <li class="common-list-item">CSS</li>
+              <li class="common-list-item">React JS</li>
+              <li class="common-list-item">TailwindCSS</li>
             </ul>
           </div>
         </div>
@@ -95,16 +100,138 @@
 
     <div class="center-content" id="experience">
       <div class="sub-heading">
-        <span class="text-color-secondary about-index">02.</span>My work
-        experience
+        <span class="sub-heading-heading">
+          <span class="text-color-secondary about-index">02.</span>My work
+          experience
+        </span>
         <div class="thin-line"></div>
+      </div>
+      <div class="experience-content">
+        <div class="experience-sidebar">
+          <button
+            class="active-company-name"
+            id="doodleblue"
+            onclick="showCompaniesExperience('doodleblue')"
+          >
+            Doodleblue Innovations
+          </button>
+          <button
+            class="company-name"
+            id="spritle"
+            onclick="showCompaniesExperience('spritle')"
+          >
+            Spritle Software
+          </button>
+          <button
+            class="company-name"
+            id="skcript"
+            onclick="showCompaniesExperience('skcript')"
+          >
+            Skcript
+          </button>
+        </div>
+
+        <div class="experience-companies">
+          <div
+            class="experience-company active-experience"
+            id="doodleblue-company"
+          >
+            <h3>
+              Software Engineer
+              <span class="text-color-secondary">
+                @
+                <a
+                  href="https://www.doodleblue.com/"
+                  target="_blank"
+                  class="companies-link"
+                >
+                  Doodleblue Innovations</a
+                ></span
+              >
+            </h3>
+            <p class="time-period">November 2021 - Present</p>
+            <ul class="roles-and-responsibilities">
+              <li class="common-list-item">
+                Front-end Engineer for one of our Client's Products.
+              </li>
+              <li class="common-list-item">
+                Accountable for binding a Large number of APIs with the User
+                Interface by Understanding Complex logic and writing algorithms.
+              </li>
+              <li class="common-list-item">
+                Responsible for building features, code optimisation and
+                enhancing performance
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-company" id="spritle-company">
+            <h3>
+              React Developer
+              <span class="text-color-secondary">
+                @
+                <a
+                  href="https://www.spritle.com/"
+                  target="_blank"
+                  class="companies-link"
+                >
+                  Spritle Software</a
+                ></span
+              >
+            </h3>
+            <p class="time-period">August 2020 - November 2021</p>
+            <ul class="roles-and-responsibilities">
+              <li class="common-list-item">
+                Front-end developer for multiple ReactJS projects.
+              </li>
+              <li class="common-list-item">
+                Responsible for building Features, Code optimizations, and
+                Performance enhancements.
+              </li>
+              <li class="common-list-item">
+                Responsible for building features, code optimisation and
+                enhancing performance
+              </li>
+              <li class="common-list-item">
+                Integrated Firebase to the applications to access its features
+                like Authentication, Firestore, Hosting.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-company" id="skcript-company">
+            <h3>
+              Web Development Intern
+              <span class="text-color-secondary">
+                @
+                <a
+                  href="https://www.doodleblue.com/"
+                  target="_blank"
+                  class="companies-link"
+                >
+                  Skcript</a
+                ></span
+              >
+            </h3>
+            <p class="time-period">November 2020 - December 2020</p>
+            <ul class="roles-and-responsibilities">
+              <li class="common-list-item">
+                Part of the development team where I used ReactJS to implement
+                new features in one of their projects.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="center-content" id="contact">
       <div class="get-in-touch">
         <div class="contact-sub-heading sub-heading">
-          <span class="text-color-secondary about-index">02.</span>Get in touch
+          <span class="sub-heading-heading">
+            <span class="text-color-secondary about-index">02.</span>Get in
+            touch</span
+          >
           <div class="thin-line"></div>
         </div>
 

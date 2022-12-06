@@ -16,6 +16,11 @@ html {
   /* padding: 1rem 2rem; */
 }
 
+.logo {
+  text-decoration: none;
+  color: #ccd7f6;
+}
+
 .text-color-secondary {
   color: #64ffda;
 }
@@ -125,6 +130,11 @@ html {
   font-size: 1.5rem;
   /* justify-content: space-between; */
 }
+
+.sub-heading-heading {
+  white-space: nowrap;
+}
+
 .thin-line {
   height: 1px;
   width: 40vw;
@@ -148,19 +158,19 @@ html {
   line-height: 2;
 }
 
-.most-familiar-skills-list {
+.common-list {
   display: grid;
   grid-template-columns: auto auto;
 }
 
-.most-familiar-skills-list-item {
+.common-list-item {
   font-family: monospace;
   font-size: 1rem;
   position: relative;
   margin-bottom: 10px;
   padding-left: 20px;
 }
-.most-familiar-skills-list-item::marker {
+.common-list-item::marker {
   content: "▹";
   position: absolute;
   left: 0px;
@@ -206,6 +216,92 @@ html {
 
 .menu-item-social svg {
   width: 20px;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.experience-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.active-company-name {
+  color: #64ffda;
+  background-color: #112340;
+  border-left: solid 2px #64ffda !important;
+  /* transition-delay: 100ms; */
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: 300ms linear;
+
+  padding: 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-left: solid 2px #233655;
+  font-family: monospace;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.company-name {
+  padding: 15px;
+  background-color: transparent;
+  color: #8796b2;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-left: solid 2px #233655;
+  font-family: monospace;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.company-name:hover {
+  color: #64ffda;
+  background-color: #112340;
+  /* border-left: solid 2px #64ffda; */
+  /* transition-delay: 100ms; */
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: 300ms linear;
+}
+
+.companies-link {
+  text-decoration: none;
+  color: #64ffda;
+}
+
+.experience-companies {
+  padding-left: 15px;
+}
+
+.roles-and-responsibilities {
+  padding-left: 9px;
+  min-height: 17rem;
+}
+
+.roles-and-responsibilities li {
+  width: 46rem;
+}
+
+.experience-company {
+  display: none;
+}
+
+.active-experience {
+  display: block !important;
+}
+
+.experience-company h3 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -318,8 +414,13 @@ html {
   .sub-heading {
     /* font-size: 2rem; */
     width: calc(100vw - 6rem);
-    justify-content: start;
+    justify-content: space-between;
     font-size: 1.2rem;
+  }
+
+  .sub-heading-heading {
+    width: max-content;
+    white-space: nowrap;
   }
 
   .container {
@@ -365,7 +466,8 @@ html {
   }
 
   .thin-line {
-    width: 5rem;
+    /* width: 5rem; */
+    flex-grow: 1;
   }
 
   .social {

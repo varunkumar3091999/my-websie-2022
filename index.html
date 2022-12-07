@@ -27,11 +27,34 @@
             >Resume</a
           >
 
-          <div class="nav-toggle">
-            <div class="nav-line"></div>
+          <div class="nav-toggle active-nav-toggle" onclick="toggleSidebar()">
+            <div class="nav-line" id="nav-line"></div>
+            <div class="nav-line nav-line-1" id="nav-line-1"></div>
+            <div class="nav-line nav-line-2" id="nav-line-2"></div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <!-- <div class="menu"> -->
+      <a class="sidebar-menu-item" href="#about" onclick="toggleSidebar()">
+        <span class="menu-index text-color-secondary">01.</span>About
+      </a>
+      <a class="sidebar-menu-item" href="#experience" onclick="toggleSidebar()">
+        <span class="menu-index text-color-secondary">02.</span>Experience
+      </a>
+      <a class="sidebar-menu-item" href="#contact" onclick="toggleSidebar()">
+        <span class="menu-index text-color-secondary">03.</span>Contact
+      </a>
+      <a
+        class="sidebar-menu-item resume"
+        href="resume.pdf"
+        target="_blank"
+        onclick="toggleSidebar()"
+        >Resume</a
+      >
+      <!-- </div> -->
     </div>
 
     <div class="center-content" id="home">
@@ -175,7 +198,7 @@
                   target="_blank"
                   class="companies-link"
                 >
-                  Spritle Software</a
+                  <span>Spritle Software</span></a
                 ></span
               >
             </h3>

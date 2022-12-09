@@ -71,3 +71,14 @@ const toggleSidebar = () => {
     navLine2.classList.add("active-nav-line-2");
   }
 };
+
+const imageContainer = document.getElementById("image");
+
+const fakeBorder = document.getElementById("image-fake-border");
+
+// imageContainer.addEventListener("mouseover", moveFakeBorder);
+console.log(imageContainer);
+
+const moveFakeBorder = () => {
+  console.log("here");
+};

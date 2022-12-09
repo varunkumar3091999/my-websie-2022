@@ -322,6 +322,59 @@ html {
   display: none;
 }
 
+.image {
+  /* background-image: url("varun-photo.jpg");
+  width: 20rem;
+  height: 20rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  margin-top: 3rem;
+}
+
+.image img {
+  width: 20rem;
+  height: 25rem;
+  object-fit: cover;
+  position: relative;
+  border: 2px solid #64ffda;
+  /* border-radius: 10px; */
+
+  /* width: 2; */
+}
+
+.image img::after {
+  width: 20rem;
+  height: 25rem;
+  content: "";
+  background-color: green;
+  display: block;
+  /* object-fit: cover; */
+  /* position: absolute; */
+  border: 2px solid #64ffda;
+  border-radius: 10px;
+
+  /* width: 2; */
+}
+
+.fake-border {
+  border: 2px solid #64ffda;
+  width: 20rem;
+  height: 25rem;
+  position: absolute;
+  z-index: -1;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  transition: margin-top 1s, margin-left 1s;
+}
+
+.face-border-hover {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .resume {
     padding: 0.5rem 1rem;
@@ -610,8 +663,9 @@ html {
   }
 
   .image img {
-    width: 15rem;
-    height: 15rem;
+    /* width: 15rem;
+    height: 15rem; */
+    /* width: 2; */
   }
 
   .image {

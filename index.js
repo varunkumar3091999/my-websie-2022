@@ -70,14 +70,20 @@ const toggleSidebar = () => {
   } else {
     navLine2.classList.add("active-nav-line-2");
   }
+
+  const centerContents = document.querySelectorAll(".center-content");
+  centerContents.forEach((elem) => {
+    if (elem.classList.contains("blur-content")) {
+      elem.classList.remove("blur-content");
+    } else {
+      elem.classList.add("blur-content");
+    }
+  });
 };
 
 const imageContainer = document.getElementById("image");
 
 const fakeBorder = document.getElementById("image-fake-border");
-
-// imageContainer.addEventListener("mouseover", moveFakeBorder);
-console.log(imageContainer);
 
 const moveFakeBorder = () => {
   console.log("here");

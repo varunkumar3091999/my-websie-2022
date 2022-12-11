@@ -16,6 +16,10 @@ html {
   /* padding: 1rem 2rem; */
 }
 
+.blur-content {
+  filter: blur(5px);
+}
+
 .logo {
   text-decoration: none;
   color: #ccd7f6;
@@ -615,6 +619,7 @@ html {
     transition-timing-function: ease-in-out;
     transition: transform 1s;
     transform: translate3d(46%, 0, 0) !important;
+    filter: blur(0);
   }
 }
 
@@ -666,6 +671,8 @@ html {
     /* width: 15rem;
     height: 15rem; */
     /* width: 2; */
+    width: 10rem;
+    height: 15rem;
   }
 
   .image {

@@ -453,6 +453,10 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+  .sidebar-open {
+    overflow: hidden !important;
+  }
+
   .about-heading {
     font-size: 1rem;
   }
@@ -605,7 +609,7 @@ html {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(164%, 0, 0);
     transition-timing-function: ease-in-out;
-    transition: transform 1s;
+    transition: transform 0.5s;
   }
 
   .sidebar-menu-item.resume {
@@ -617,7 +621,7 @@ html {
     /* right: 0 !important; */
     /* transition-delay: 1s; */
     transition-timing-function: ease-in-out;
-    transition: transform 1s;
+    transition: transform 0.5s;
     transform: translate3d(46%, 0, 0) !important;
     filter: blur(0);
   }

@@ -79,6 +79,13 @@ const toggleSidebar = () => {
       elem.classList.add("blur-content");
     }
   });
+
+  const html = document.querySelector("html");
+  if (html.classList.contains("sidebar-open")) {
+    html.classList.remove("sidebar-open");
+  } else {
+    html.classList.add("sidebar-open");
+  }
 };
 
 const imageContainer = document.getElementById("image");

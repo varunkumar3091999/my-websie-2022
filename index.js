@@ -95,3 +95,54 @@ const fakeBorder = document.getElementById("image-fake-border");
 const moveFakeBorder = () => {
   console.log("here");
 };
+
+window.addEventListener("load", () => {
+  const about = document.getElementById("about-menu");
+  const experience = document.getElementById("experience-menu");
+  const contact = document.getElementById("contact-menu");
+  const resume = document.getElementById("resume-menu");
+  const myNameIs = document.getElementById("my-name-is");
+  const fullName = document.getElementById("fullname");
+  const buildThings = document.getElementById("build-things");
+  const selfIntro = document.getElementById("self-intro");
+
+  if (about.classList.contains("initial-about")) {
+    about.classList.add("final-about");
+    about.classList.remove("initial-about");
+  }
+
+  if (experience.classList.contains("initial-experience")) {
+    experience.classList.add("final-experience");
+    experience.classList.remove("initial-experience");
+  }
+
+  if (contact.classList.contains("initial-contact")) {
+    contact.classList.add("final-contact");
+    contact.classList.remove("initial-contact");
+  }
+
+  if (resume.classList.contains("initial-resume")) {
+    resume.classList.add("final-resume");
+    resume.classList.remove("initial-resume");
+  }
+
+  if (myNameIs.classList.contains("initial-my-name-is")) {
+    myNameIs.classList.add("final-my-name-is");
+    myNameIs.classList.remove("initial-my-name-is");
+  }
+
+  if (fullName.classList.contains("initial-fullname")) {
+    fullName.classList.add("final-fullname");
+    fullName.classList.remove("initial-fullname");
+  }
+
+  if (buildThings.classList.contains("initial-build-things")) {
+    buildThings.classList.add("final-build-things");
+    buildThings.classList.remove("initial-build-things");
+  }
+
+  if (selfIntro.classList.contains("initial-self-intro")) {
+    selfIntro.classList.add("final-self-intro");
+    selfIntro.classList.remove("initial-self-intro");
+  }
+});

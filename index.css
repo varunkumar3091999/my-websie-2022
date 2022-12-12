@@ -379,6 +379,106 @@ html {
   margin-top: 1rem;
 }
 
+.initial-about {
+  transform: translateY(-3rem);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+
+.final-about {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+
+.initial-experience {
+  transform: translateY(-3rem);
+  opacity: 0;
+  transition: transform 0.4s ease-in, opacity 0.2s;
+}
+
+.final-experience {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.4s ease-in, opacity 0.2s;
+}
+
+.initial-contact {
+  transform: translateY(-3rem);
+  opacity: 0;
+  transition: transform 0.6s ease-in, opacity 0.2s;
+}
+
+.final-contact {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s ease-in, opacity 0.2s;
+}
+
+.initial-resume {
+  transform: translateY(-4rem);
+  opacity: 0;
+  transition: transform 0.8s ease-in, opacity 0.2s;
+}
+
+.final-resume {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.8s ease-in, opacity 0.2s;
+}
+
+.initial-my-name-is {
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+
+.final-my-name-is {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+  transition-delay: 1s;
+}
+
+.initial-fullname {
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+
+.final-fullname {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.4s ease-in, opacity 0.4s;
+  transition-delay: 1.1s;
+}
+
+.initial-build-things {
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+
+.final-build-things {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.6s ease-in, opacity 0.6s;
+  transition-delay: 1.2s;
+}
+
+.initial-self-intro {
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s;
+}
+
+.final-self-intro {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.8s ease-in, opacity 0.8s;
+  transition-delay: 1.3s;
+}
+
 @media only screen and (max-width: 1024px) {
   .resume {
     padding: 0.5rem 1rem;

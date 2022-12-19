@@ -16,7 +16,6 @@ const makeActive = (id) => {
 
   const button = document.getElementById(id);
 
-  console.log(button);
   button.classList.add("active-company-name");
   button.classList.remove("company-name");
 };
@@ -34,7 +33,6 @@ const showCompaniesExperience = (id) => {
 
   const button = document.getElementById(id + "-company");
 
-  console.log(button);
   button.classList.add("active-experience");
   button.classList.remove("experience-company");
 };
@@ -92,10 +90,6 @@ const imageContainer = document.getElementById("image");
 
 const fakeBorder = document.getElementById("image-fake-border");
 
-const moveFakeBorder = () => {
-  console.log("here");
-};
-
 window.addEventListener("load", () => {
   const about = document.getElementById("about-menu");
   const experience = document.getElementById("experience-menu");
@@ -127,22 +121,61 @@ window.addEventListener("load", () => {
   }
 
   if (myNameIs.classList.contains("initial-my-name-is")) {
-    myNameIs.classList.add("final-my-name-is");
     myNameIs.classList.remove("initial-my-name-is");
+    myNameIs.classList.add("final-my-name-is");
   }
 
   if (fullName.classList.contains("initial-fullname")) {
-    fullName.classList.add("final-fullname");
     fullName.classList.remove("initial-fullname");
+    fullName.classList.add("final-fullname");
   }
 
   if (buildThings.classList.contains("initial-build-things")) {
-    buildThings.classList.add("final-build-things");
     buildThings.classList.remove("initial-build-things");
+    buildThings.classList.add("final-build-things");
   }
 
   if (selfIntro.classList.contains("initial-self-intro")) {
-    selfIntro.classList.add("final-self-intro");
     selfIntro.classList.remove("initial-self-intro");
+    selfIntro.classList.add("final-self-intro");
   }
 });
+
+window.addEventListener("unload", () => {
+  const about = document.getElementById("about-menu");
+  const experience = document.getElementById("experience-menu");
+  const contact = document.getElementById("contact-menu");
+  const resume = document.getElementById("resume-menu");
+  const myNameIs = document.getElementById("my-name-is");
+  const fullName = document.getElementById("fullname");
+  const buildThings = document.getElementById("build-things");
+  const selfIntro = document.getElementById("self-intro");
+
+  about.classList.remove("final-about");
+  about.classList.add("initial-about");
+
+  experience.classList.remove("final-experience");
+  experience.classList.add("initial-experience");
+
+  contact.classList.remove("final-contact");
+  contact.classList.add("initial-contact");
+
+  resume.classList.remove("final-resume");
+  resume.classList.add("initial-resume");
+
+  myNameIs.classList.remove("final-my-name-is");
+  myNameIs.classList.add("initial-my-name-is");
+
+  fullName.classList.remove("final-fullname");
+  fullName.classList.add("initial-fullname");
+
+  buildThings.classList.remove("final-build-things");
+  buildThings.classList.add("initial-build-things");
+
+  selfIntro.classList.remove("final-self-intro");
+  selfIntro.classList.add("initial-self-intro");
+});
+
+const onscroll = (id) => {
+  var elem = document.querySelectorAll(".center-content");
+};

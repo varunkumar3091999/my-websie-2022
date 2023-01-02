@@ -23,6 +23,12 @@ html {
 .logo {
   text-decoration: none;
   color: #ccd7f6;
+  display: flex;
+  align-items: end;
+}
+
+.logo img {
+  width: 3rem;
 }
 
 .text-color-secondary {
@@ -49,12 +55,15 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 2rem;
+  height: 5rem;
 }
 
 .menu {
   padding: 1rem 0;
   display: flex;
+  align-items: center;
 }
 
 .menu-item {
@@ -86,8 +95,12 @@ html {
   border: #64ffda solid 1px;
   border-radius: 5px;
   padding: 1rem 1.5rem;
+  padding-bottom: 5px;
+  padding-top: 19px;
   text-decoration: none;
   color: #64ffda;
+  height: 1rem;
+  line-height: 0px;
 }
 
 .center-content {
@@ -300,6 +313,10 @@ html {
   color: #64ffda;
 }
 
+.say-hello {
+  padding: 0.5rem 1rem;
+}
+
 .experience-companies {
   padding-left: 15px;
 }
@@ -502,6 +519,12 @@ html {
     padding: 0.5rem 1rem;
     height: 1rem;
     margin-top: 10px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+  }
+
+  .say-hello {
+    padding-top: 10px;
   }
 
   .center-content {
@@ -572,6 +595,10 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+  .logo img {
+    width: 2.5rem;
+    margin-top: 10px;
+  }
   .final-my-name-is {
     transition-delay: 0ms;
   }
@@ -773,6 +800,7 @@ html {
   .center-content {
     padding: 0 2rem;
     width: calc(100vw - 4rem);
+    padding-left: 1rem;
   }
 
   .sub-heading {
@@ -798,6 +826,7 @@ html {
 
   .header {
     width: 85vw;
+    padding-left: 1rem;
   }
 
   .social::after {

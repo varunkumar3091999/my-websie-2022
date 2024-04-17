@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Varun Kumar</title>
-    <link rel="icon" type="image" href="varun-logo.png">
+    <link rel="icon" type="image" href="varun-logo.png" />
 
     <link rel="stylesheet" href="index.css" />
 
@@ -36,7 +36,7 @@
           </a>
           <a
             class="menu-item resume initial-resume"
-            href="#"
+            href="Varun Kumar S - Software Engineer.pdf"
             id="resume-menu"
             target="_blank"
             >Resume</a
@@ -64,7 +64,7 @@
       </a>
       <a
         class="sidebar-menu-item resume"
-        href="Varun Kumar - Resume.pdf"
+        href="/Varun Kumar S - Software Engineer.pdf"
         target="_blank"
         onclick="toggleSidebar()"
         >Resume</a
@@ -72,7 +72,7 @@
       <!-- </div> -->
     </div>
 
-    <div class="center-content" id="home" ">
+    <div class="center-content" id="home">
       <div class="dummy-div">hi</div>
       <div
         class="intro-hi text-color-secondary initial-my-name-is"
@@ -123,13 +123,14 @@
           <br />
           <br />
 
-          Fast-forward today, I am now a ReactJS developer at
+          Fast-forward today, I am now a Software Engineer at
           <a
-            href="https://www.doodleblue.com/"
+            href="https://nurefuturetech.ai/"
             target="_blank"
-            class="nodejs-link"
-            >Doodleblue Innovations</a
-          >, with 2 years of work experience.
+            class="nodejs-link current-company-name"
+            >NuRe Futuretech</a
+          >
+          - a 3i-infotech company, with 3 years of work experience.
 
           <br />
           <br />
@@ -164,6 +165,13 @@
         <div class="experience-sidebar">
           <button
             class="active-company-name"
+            id="infotech"
+            onclick="showCompaniesExperience('infotech')"
+          >
+            NuRe Futuretech - A 3i-infotech company
+          </button>
+          <button
+            class="company-name"
             id="doodleblue"
             onclick="showCompaniesExperience('doodleblue')"
           >
@@ -188,8 +196,40 @@
         <div class="experience-companies">
           <div
             class="experience-company active-experience"
-            id="doodleblue-company"
+            id="infotech-company"
           >
+            <h3>
+              Software Development Engineer - I
+              <span class="text-color-secondary">
+                @
+                <a
+                  href="https://www.doodleblue.com/"
+                  target="_blank"
+                  class="companies-link"
+                >
+                  Nure Futuretech</a
+                ></span
+              >
+            </h3>
+            <p class="time-period">June 2023 - Present</p>
+            <ul class="roles-and-responsibilities">
+              <li class="common-list-item">
+                Expertise in building robust React.js applications for dynamic
+                user interfaces.
+              </li>
+              <li class="common-list-item">
+                Seamless integration of diverse APIs for smooth data flow.
+              </li>
+              <li class="common-list-item">
+                Meticulous debugging to maintain high-quality performance.
+              </li>
+              <li class="common-list-item">
+                Thorough unit testing ensures reliability and stability in the
+                final product.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-company" id="doodleblue-company">
             <h3>
               Software Engineer
               <span class="text-color-secondary">
@@ -203,18 +243,23 @@
                 ></span
               >
             </h3>
-            <p class="time-period">November 2021 - Present</p>
+            <p class="time-period">November 2021 - May 2023</p>
             <ul class="roles-and-responsibilities">
               <li class="common-list-item">
-                Front-end Engineer for one of our Client's Products.
+                Integrate numerous APIs into the UI, requiring deep logic
+                understanding and algorithm development.
               </li>
               <li class="common-list-item">
-                Accountable for binding a Large number of APIs with the User
-                Interface by Understanding Complex logic and writing algorithms.
+                Develop new features, ensure seamless integration, and optimize
+                performance.
               </li>
               <li class="common-list-item">
-                Responsible for building features, code optimisation and
-                enhancing performance
+                Focus on code optimization, adhering to best practices and
+                standards.
+              </li>
+              <li class="common-list-item">
+                Continuously enhance product performance and functionality for
+                user satisfaction and success.
               </li>
             </ul>
           </div>
@@ -236,19 +281,16 @@
             <p class="time-period">August 2020 - November 2021</p>
             <ul class="roles-and-responsibilities">
               <li class="common-list-item">
-                Front-end developer for multiple ReactJS projects.
+                Front-end developer: ReactJS projects, feature focus,
+                optimization, performance.
               </li>
               <li class="common-list-item">
-                Responsible for building Features, Code optimizations, and
-                Performance enhancements.
+                Integrated Firebase: Authentication, Firestore, Hosting for
+                enhanced capabilities.
               </li>
               <li class="common-list-item">
-                Responsible for building features, code optimisation and
-                enhancing performance
-              </li>
-              <li class="common-list-item">
-                Integrated Firebase to the applications to access its features
-                like Authentication, Firestore, Hosting.
+                Collaborated for seamless Firebase integration, optimizing
+                project functionality.
               </li>
             </ul>
           </div>
@@ -270,8 +312,9 @@
             <p class="time-period">November 2020 - December 2020</p>
             <ul class="roles-and-responsibilities">
               <li class="common-list-item">
-                Part of the development team where I used ReactJS to implement
-                new features in one of their projects.
+                I was a valued member of the development team tasked with
+                implementing new features using ReactJS within one of their
+                projects.
               </li>
             </ul>
           </div>
